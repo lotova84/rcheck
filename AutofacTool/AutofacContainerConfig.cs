@@ -30,7 +30,7 @@ namespace AutofacTool
     /// 2) Временем жизни управляет сам IoC. Если нужно предоставить внешним сервисам это управление то можно указать ExternallyOwned:
     ///   -> builder.RegisterType<SomeService>().As<ISomeService>().ExternallyOwned();
     /// </summary>
-    class AutofacContainerConfig
+    class AutofacContainerConfig 
     {
         //public static IServiceProvider Configure()
         public static IComponentContext Configure()
@@ -94,7 +94,7 @@ namespace AutofacTool
             //var someService = new SomeService();
             //builder.RegisterInstance(someService).As<ISomeService>();
 
-
+            
             // ======== Конструкторы ========
             //// 1-й вариант.
             //// Если у класса несколько конструкторов то можно указать какой выбрать.
