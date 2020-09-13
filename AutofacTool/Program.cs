@@ -32,7 +32,7 @@ namespace AutofacTool
             //var objs = container.Resolve<IEnumerable<ISomeService>>();
 
             //obj.DoSomething();
-
+            // added comment
             var query = container.ResolveOptional<IQuery<FindEnititesCriterion, IEnumerable<Entity>>>();
             var result = query.Ask(new FindEnititesCriterion());
 
